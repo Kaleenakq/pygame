@@ -28,14 +28,14 @@ def show_title_screen():
     
     showing = True
     while showing:
-        WINDOW.fill("pink")  # Title screen background color
-        WINDOW.blit(label, (200, 200))  # Title text
+        WINDOW.fill("pink")  
+        WINDOW.blit(label, (200, 200))  
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
                 exit()
-            if event.type == pygame.MOUSEBUTTONDOWN:  # Click anywhere to start
+            if event.type == pygame.MOUSEBUTTONDOWN:  
                 showing = False
 
         pygame.display.update()
