@@ -2,10 +2,7 @@ import pygame
 import cv2
 import numpy as np
 
-
 pygame.init()
-
-
 WIDTH, HEIGHT = 650, 650
 WINDOW = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Cover Cat =^-^=")
@@ -42,7 +39,7 @@ def show_title_screen():
 
 
 def main():
-    show_title_screen()  # Show title screen first
+    show_title_screen() 
 
     clock = pygame.time.Clock()
     run = True
